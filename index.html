@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regal Entertainment - Premium Futuristic Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loading -->
+<div class="loading-screen" id="loadingScreen">
+    <div class="loading-logo">Regal Entertainment</div>
+    <div class="loading-spinner"></div>
+</div>
+
+<!-- Audio Control -->
+<div class="audio-control" id="audioControl" title="Toggle Sound">
+    <i class="ri-volume-mute-line text-xl"></i>
+</div>
+
+<!-- Particles -->
+<div id="particles-js"></div>
+
+<!-- Sidebar -->
+<nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <h2 class="text-xl font-bold text-red-500" style="font-family:'Orbitron',monospace;">REGAL</h2>
+    </div>
+    <div class="sidebar-menu">
+        <div class="menu-item active" data-page="home"><i class="ri-home-5-line menu-icon"></i><span>Beranda</span></div>
+        <div class="menu-item" data-page="about"><i class="ri-user-star-line menu-icon"></i><span>Tentang Developer</span></div>
+        <div class="menu-item" data-page="social"><i class="ri-share-forward-line menu-icon"></i><span>Social Media</span></div>
+        <div class="menu-item" data-page="projects"><i class="ri-code-box-line menu-icon"></i><span>Projects</span></div>
+        <div class="menu-item" data-page="contact"><i class="ri-mail-send-line menu-icon"></i><span>Kontak</span></div>
+        <div class="menu-item" data-page="games"><i class="ri-gamepad-line menu-icon"></i><span>Games</span></div>
+        <div class="menu-item" data-page="photos"><i class="ri-image-line menu-icon"></i><span>Photos</span></div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main class="main-content" id="mainContent">
+    <header class="header">
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </header>
+
+    <!-- Home -->
+    <div class="page active" id="home">
+        <div class="hero-slider" id="heroSlider">
+            <div class="slide active"><img src="https://raw.githubusercontent.com/regal1256/regal/main/regal.jpg" alt="Regal 1">
+                <div class="slide-overlay">
+                    <div class="slide-content text-center">
+                        <h1 id="heroTitle">Welcome to Regal Entertainment</h1>
+                        <div class="text-rotator">
+                            <div class="rotator-text active">Premium Futuristic Experience</div>
+                            <div class="rotator-text">Innovation Meets Technology</div>
+                            <div class="rotator-text">Digital Excellence Unleashed</div>
+                            <div class="rotator-text">Next-Gen Development</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide"><img src="https://raw.githubusercontent.com/regal1256/regal/main/regal1.jpg" alt="Regal 2">
+                <div class="slide-overlay">
+                    <div class="slide-content text-center">
+                        <h1>Regal Entertainment</h1>
+                        <div class="text-rotator">
+                            <div class="rotator-text active">Crafting Digital Dreams</div>
+                            <div class="rotator-text">Beyond Imagination</div>
+                            <div class="rotator-text">Future is Now</div>
+                            <div class="rotator-text">Limitless Innovation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide"><img src="https://raw.githubusercontent.com/regal1256/regal/main/regal2.jpg" alt="Regal 3">
+                <div class="slide-overlay">
+                    <div class="slide-content text-center">
+                        <h1>Regal Entertainment</h1>
+                        <div class="text-rotator">
+                            <div class="rotator-text active">Technology Redefined</div>
+                            <div class="rotator-text">Innovation Hub</div>
+                            <div class="rotator-text">Digital Mastery</div>
+                            <div class="rotator-text">Future Creator</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cyber-card">
+            <h2 class="text-2xl font-bold mb-4" style="font-family:'Orbitron',monospace;">Tentang Kami</h2>
+            <p class="text-gray-300 leading-relaxed">Regal Entertainment adalah developer kreatif di bidang teknologi, AI, bot automation, dan digital innovation. Kami menghadirkan solusi modern dengan sentuhan futuristik untuk pengalaman digital yang luar biasa.</p>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="page" id="about">
+        <div class="cyber-card">
+            <h1 class="text-3xl font-bold mb-6" style="font-family:'Orbitron',monospace;">Tentang Developer</h1>
+            <div class="about-container flex flex-col lg:flex-row items-center gap-6">
+                <img src="https://files.catbox.moe/59gpsc.jpg" alt="Profile" class="profile-photo">
+                <div class="flex-1 text-center lg:text-left">
+                    <h2 class="text-2xl font-bold mb-2">Regal Entertainment</h2>
+                    <p class="text-gray-300 mb-4">Developer kreatif di bidang teknologi, AI, bot automation, dan digital innovation.</p>
+                    <div class="flex flex-wrap gap-2 justify-center lg:justify-start">
+                        <span class="px-3 py-1 bg-red-500/20 border border-red-500/30 rounded-full text-sm">AI Development</span>
+                        <span class="px-3 py-1 bg-red-500/20 border border-red-500/30 rounded-full text-sm">Automation</span>
+                        <span class="px-3 py-1 bg-red-500/20 border border-red-500/30 rounded-full text-sm">Web Design</span>
+                        <span class="px-3 py-1 bg-red-500/20 border border-red-500/30 rounded-full text-sm">Game Dev</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social -->
+    <div class="page" id="social">
+        <h1 class="text-3xl font-bold mb-6" style="font-family:'Orbitron',monospace;">Social Media</h1>
+        <div class="grid-social">
+            <div class="cyber-card text-center social-card" data-link="https://whatsapp.com/channel/0029Vb6iyckEVccJXWUxRn2h"><i class="ri-whatsapp-line text-4xl text-red-500 mb-4"></i><h3 class="text-xl font-bold mb-2">WhatsApp Channel</h3><p class="text-gray-400 mb-4">Official WhatsApp Channel</p><span class="cyber-button inline-block">Kunjungi Channel</span></div>
+            <div class="cyber-card text-center social-card" data-link="https://t.me/Regalsenpai"><i class="ri-telegram-line text-4xl text-red-500 mb-4"></i><h3 class="text-xl font-bold mb-2">Telegram</h3><p class="text-gray-400 mb-4">@Regalsenpai</p><span class="cyber-button inline-block">Hubungi Telegram</span></div>
+            <div class="cyber-card text-center social-card" data-link="https://github.com/regalmuhammad46-stack"><i class="ri-github-line text-4xl text-red-500 mb-4"></i><h3 class="text-xl font-bold mb-2">GitHub</h3><p class="text-gray-400 mb-4">regalmuhammad46-stack</p><span class="cyber-button inline-block">Lihat GitHub</span></div>
+            <div class="cyber-card text-center social-card" data-link="https://wa.me/6281523968059"><i class="ri-whatsapp-line text-4xl text-red-500 mb-4"></i><h3 class="text-xl font-bold mb-2">WhatsApp Personal</h3><p class="text-gray-400 mb-4">+62 815-2396-8059</p><span class="cyber-button inline-block">Chat WhatsApp</span></div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="page" id="projects">
+        <h1 class="text-3xl font-bold mb-6" style="font-family:'Orbitron',monospace;">Projects</h1>
+        <div class="grid-projects">
+            <div class="cyber-card"><div class="w-full h-48 bg-gradient-to-br from-red-500/20 to-red-700/20 rounded-lg mb-4 flex items-center justify-center"><i class="ri-code-line text-6xl text-red-500/50"></i></div><h3 class="text-xl font-bold mb-2">AI Automation Bot</h3><p class="text-gray-400 mb-4">Automatisasi cerdas dengan AI untuk meningkatkan produktivitas.</p><button class="cyber-button detail-btn" data-title="AI Automation Bot" data-desc="Bot otomatis pintar yang bisa handle task berulap: auto-reply, data entry, report generation, integrasi API, dll. Dibuat dengan Python + Node.js + AI model.">Lihat Detail</button></div>
+            <div class="cyber-card"><div class="w-full h-48 bg-gradient-to-br from-red-500/20 to-red-700/20 rounded-lg mb-4 flex items-center justify-center"><i class="ri-smartphone-line text-6xl text-red-500/50"></i></div><h3 class="text-xl font-bold mb-2">Mobile Dashboard</h3><p class="text-gray-400 mb-4">Aplikasi dashboard mobile dengan UI futuristik.</p><button class="cyber-button detail-btn" data-title="Mobile Dashboard" data-desc="Dashboard mobile real-time untuk tracking sales, analytic, IoT device. Support dark-mode, offline-sync, push notification. Built dengan React Native.">Lihat Detail</button></div>
+            <div class="cyber-card"><div class="w-full h-48 bg-gradient-to-br from-red-500/20 to-red-700/20 rounded-lg mb-4 flex items-center justify-center"><i class="ri-robot-line text-6xl text-red-500/50"></i></div><h3 class="text-xl font-bold mb-2">AI Chat Assistant</h3><p class="text-gray-400 mb-4">Asisten AI canggih untuk berbagai kebutuhan.</p><button class="cyber-button detail-btn" data-title="AI Chat Assistant" data-desc="Chatbot AI yang bisa jawab customer 24/7, multi-bahasa, integrasi CRM, sentiment analysis, auto-ticket generation.">Lihat Detail</button></div>
+            <div class="cyber-card"><div class="w-full h-48 bg-gradient-to-br from-red-500/20 to-red-700/20 rounded-lg mb-4 flex items-center justify-center"><i class="ri-global-line text-6xl text-red-500/50"></i></div><h3 class="text-xl font-bold mb-2">Web Analytics</h3><p class="text-gray-400 mb-4">Platform analitik web dengan visualisasi data real-time.</p><button class="cyber-button detail-btn" data-title="Web Analytics" data-desc="Analytics platform mirip Google Analytics tapi lebih simple & privat. Real-time visitor, heatmap, event tracking, export report.">Lihat Detail</button></div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="page" id="contact">
+        <div class="max-w-2xl mx-auto">
+            <h1 class="text-3xl font-bold mb-6 text-center" style="font-family:'Orbitron',monospace;">Hubungi Kami</h1>
+            <div class="cyber-card">
+                <form id="contactForm">
+                    <div class="mb-6"><label class="block text-sm font-medium mb-2">Nama Lengkap</label><input type="text" class="cyber-input" placeholder="Masukkan nama Anda" required></div>
+                    <div class="mb-6"><label class="block text-sm font-medium mb-2">Email</label><input type="email" class="cyber-input" placeholder="Masukkan email Anda" required></div>
+                    <div class="mb-6"><label class="block text-sm font-medium mb-2">Subjek</label><input type="text" class="cyber-input" placeholder="Masukkan subjek pesan" required></div>
+                    <div class="mb-6"><label class="block text-sm font-medium mb-2">Pesan</label><textarea class="cyber-input" rows="5" placeholder="Masukkan pesan Anda" required></textarea></div>
+                    <button type="submit" class="cyber-button w-full">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Games -->
+    <div class="page" id="games">
+        <h1 class="text-3xl font-bold mb-6" style="font-family:'Orbitron',monospace;">Mini Games</h1>
+        <div class="grid-projects">
+            <div class="cyber-card text-center" onclick="startGame('tictactoe')">
+                <i class="ri-gamepad-line text-5xl text-red-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Cyber Tic-Tac-Toe</h3>
+                <p class="text-gray-400 mb-4">Game klasik dengan sentuhan futuristik neon. Lawan AI dengan 3 tingkat kesulitan!</p>
+                <span class="cyber-button inline-block">Mulai Game</span>
+            </div>
+            <div class="cyber-card text-center" onclick="startGame('memory')">
+                <i class="ri-brain-line text-5xl text-red-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Memory Card Scanner</h3>
+                <p class="text-gray-400 mb-4">Test ingatan Anda dengan kartu digital neon.</p>
+                <span class="cyber-button inline-block">Mulai Game</span>
+            </div>
+            <div class="cyber-card text-center" onclick="startGame('reflex')">
+                <i class="ri-speed-line text-5xl text-red-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Reflex Speed Test</h3>
+                <p class="text-gray-400 mb-4">Uji kecepatan refleks Anda dengan tombol menyala.</p>
+                <span class="cyber-button inline-block">Mulai Game</span>
+            </div>
+        </div>
+        <div id="gameContainer" class="hidden mt-8"><div class="cyber-card"><div class="flex justify-between items-center mb-4"><h3 id="gameTitle" class="text-xl font-bold"></h3><button onclick="closeGame()" class="text-red-500 hover:text-red-400"><i class="ri-close-line text-2xl"></i></button></div><div id="gameContent"></div></div></div>
+    </div>
+
+    <!-- Photos -->
+    <div class="page" id="photos">
+        <h1 class="text-3xl font-bold mb-6" style="font-family:'Orbitron',monospace;">Photos</h1>
+        <div class="foto-grid">
+            <div class="foto-card">
+                <img src="https://raw.githubusercontent.com/regal154/douyin/main/douyin1.jpg" alt="douyin1" class="foto-img">
+                <h3 class="text-xl font-bold mb-2">Wife Developer 😹</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Ini dia sosok fenomenal di balik layar Regal Entertainment! My Wife Developer - wanita tangguh yang jago ngoding sambil ngibarin benderah kece. Dari ngutak-ngatik AI sampe bikin UI auto-mewah, semua dihandle pake senyum manis tapi logika killer. Tiap baris code-nya penuh cinta, tiap commit selalu ada emoji hati. Gak cuma jago tech, dia juga jago masak mie instan 3 menit pas! Salut buat queen-nya keyboard yang selalu nemenin debugging sampe pagi. Semangat terus, sayang! 💻❤️
+                </p>
+            </div>
+            <div class="foto-card">
+                <img src="https://raw.githubusercontent.com/regal154/douyin/main/douyin2.jpg" alt="douyin2" class="foto-img">
+                <h3 class="text-xl font-bold mb-2">Queen of Code</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Saat semua orang lagi tidur, dia masih war mode sama bug. Tangan mungil tapi penuh power - ketik sambil ngemil permen, hasilnya? Website maknyus! Dari nol jadi hero, dari error jadi perfect. Ini bukti cinta bisa di-compile jadi aplikasi yang flawless. Tiap project selalu ada signature "made with love by my wife" yang bikin semua client klepek-klepek. Keep slaying, my beautiful developer! 🚀✨
+                </p>
+            </div>
+            <div class="foto-card">
+                <img src="https://raw.githubusercontent.com/regal154/douyin/main/douyin.jpg" alt="douyin" class="foto-img">
+                <h3 class="text-xl font-bold mb-2">Debug & Chill</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Moment langka: dia lagi chill tapi otaknya lagi nge-render ide brilian. Dari senyum manis jadi killer instinct pas nemu error. Beauty with brain, pretty with power - combo yang bikin semua function jalan mulus. Kadang ngopi, kadang ngewine, tapi selalu ngoding pake hati. Ini dia yang bikin Regal Entertainment punya soul di tiap pixel-nya. Cheers to my forever co-founder in life and code! ☕💕
+                </p>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- Audio -->
+<audio id="clickSound" preload="auto" loop>
+    <source src="https://files.catbox.moe/5s6oo2.mp3" type="audio/mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
